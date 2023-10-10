@@ -1,1 +1,90 @@
-/* место для вашего кода */
+/* Типографика */
+
+.font_primary {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 135%;
+}
+
+.font_heading {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.fz-18 {
+  font-size: 18px;
+}
+
+/* Ссылки */
+
+a {
+  text-decoration: none; /* вместо подчеркивания будет border */
+}
+
+.link-underlined {
+  /* Подчеркивание с небольшим отступом */
+  border-bottom: solid #000 1px;
+  padding-bottom: 1px;
+
+  /* Плавное изменение при отведении курсора */
+  -webkit-transition: ease-out 0.3s; /* для Safari */
+  -o-transition: ease-out 0.3s; /* для Opera */
+  transition: ease-out 0.3s;
+}
+
+.link-underlined:active,
+.link-underlined:hover {
+  /* border делается прозрачным, 
+  но размеры остаются, чтобы верстка не скакала */
+  border-bottom: solid transparent 1px;
+
+  /* Плавное изменение при наведении курсора */
+  -webkit-transition: ease-out 0.3s; /* для Safari */
+  -o-transition: ease-out 0.3s; /* для Opera */
+  transition: ease-out 0.3s;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 93px 49px 92px 51px;
+}
+
+.header_menu {
+  display: flex;
+}
+
+.header_menu__list {
+  display: flex;
+  list-style: circle;
+  gap: 0 29px;
+  place-self: center start;
+}
+
+.header_menu__list__item {
+  padding-left: 4px;
+}
+
+.header_menu__list__item__active {
+  list-style-type: none;
+}
+
+.header_logo {
+  width: 148px;
+  height: 105px;
+  display: block;
+  margin: 0 auto;
+}
+
+.header_address {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+.header_address__list {
+  list-style: none;
+  margin-left: auto;
+  margin-right: 4px;
+}
