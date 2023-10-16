@@ -5,4 +5,4 @@
 ![index.html preview](./preview.jpg)
 
 Ссылка для автотестов:
-https://github.com/konopat/ono-tebe-nado
+https://github.com/konopat/ono-tebe-nado.git
