@@ -17,9 +17,11 @@
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
-    <header class="header display-grid">
-      <nav class="header__menu display-flex fz-18">
-        <ul class="header__links-list display-flex">
+    <!-- Хедер -->
+    <header class="header">
+      <!-- Навигация -->
+      <nav class="header__menu">
+        <ul class="header__links-list">
           <li class="header__links-list-item_no-bullit">
             <a href="#0">главная</a>
           </li>
@@ -31,17 +33,16 @@
           </li>
         </ul>
       </nav>
-      <div class="header__logo">
-        <a>
-          <img
-            class="header__logo-image display-block"
-            src="images/logo-black.svg"
-            alt="Логотип проекта"
-          />
-        </a>
-      </div>
-
-      <address class="address display-flex font_primary fz-18">
+      <!-- Логотип -->
+      <a href="#0">
+        <img
+          class="header__logo-image display-block"
+          src="images/logo-black.svg"
+          alt="Логотип проекта"
+        />
+      </a>
+      <!-- Адрес -->
+      <address class="address font_primary">
         <ul class="header__address-list">
           <li>
             <a class="link-underlined" href="tel:+99995555555">
@@ -59,139 +60,132 @@
         </ul>
       </address>
     </header>
+    <!-- Основной контент -->
     <main class="content">
-      <section class="cover cover_no-repeat color_accent">
+      <!-- Секция: "Обложка" -->
+      <section class="cover color_accent">
+        <!-- Оверлей -->
         <div class="overlay"></div>
-        <div class="content_on_top_of_the_overlay">
-          <h1 class="cover__title fz-100 font_heading">
-            <span class="display-block cover__title__pixel_perfect__first_row">
-              Он<span class="ls-0 cover__title__pixel_perfect__special_space"
-                >о
-              </span>
-            </span>
-            <span
-              class="display-block ls-0 cover__title__pixel_perfect__second_row"
-              >теб<span class="ls-0 cover__title__pixel_perfect__special_space"
-                >е
-              </span>
-            </span>
-            <span class="display-block cover__title__pixel_perfect__third_row"
-              >н<span class="cover__title__pixel_perfect__special_space"
-                >адо
-              </span>
-            </span>
-          </h1>
-          <div class="cover__description display-flex font_primary fz-22">
-            <p class="cover__description-text">
-              Аукцион вещей, в которые никто не верил
-            </p>
-
-            <button class="bet-button">Сделать ставку</button>
-          </div>
+        <!-- Главный заголовок -->
+        <h1 class="cover__title font_heading">
+          <span class="cover__title__pixel_perfect__first_row">
+            Он<span class="cover__title__pixel_perfect__special_space">о </span>
+          </span>
+          <span class="cover__title__pixel_perfect__second_row"
+            >теб<span class="cover__title__pixel_perfect__special_space"
+              >е</span
+            >
+          </span>
+          <span class="cover__title__pixel_perfect__third_row"
+            >н<span class="cover__title__pixel_perfect__special_space">ад</span
+            ><span class="letter-spacing-0">о</span>
+          </span>
+        </h1>
+        <!-- Описание -->
+        <div class="cover__description font_primary">
+          <p class="cover__description-text">
+            Аукцион вещей, в которые никто не верил
+          </p>
+          <button class="bet-button">Сделать ставку</button>
         </div>
       </section>
+      <!-- Секция: "Лоты" -->
       <section class="lots">
+        <!-- Заголовок -->
         <h2 class="lots__heading section_heading color_primary font_heading">
           Лоты
         </h2>
-        <ul class="lots__card-list display-flex list_style_none color_accent">
+        <!-- Карточки -->
+        <ul class="lots__card-list color_accent">
           <li class="lots__card-list-item">
             <a href="#0" class="card-link display-block">
-              <article class="card overlayed cover_no-repeat card_type_film">
+              <!-- Карточка про фильм -->
+              <article class="card card_type_film">
+                <!-- Оверлей -->
                 <div class="overlay"></div>
-                <div
-                  class="card__content display-flex content_on_top_of_the_overlay"
-                >
-                  <h3 class="card__title font_heading fz-22 lh-115">
-                    <span class="underlined"
-                      >Фильм режиссёра, который бросил киношколу</span
-                    >
-                  </h3>
-                  <p class="card__text fz-20 lh-120">
-                    Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                    ставка, если бы вы не знали, что режиссёр — Пол Томас
-                    Андерсон?
-                  </p>
-                </div>
+                <!-- Заголовок -->
+                <h3 class="card__title font_heading">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <!-- Описание -->
+                <p class="card__text">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
               </article>
             </a>
           </li>
           <li class="lots__card-list-item">
             <a href="#0" class="card-link">
-              <article class="card overlayed cover_no-repeat card_type_book">
+              <!-- Карточка про книгу -->
+              <article class="card card_type_book">
+                <!-- Оверлей -->
                 <div class="overlay"></div>
-                <div
-                  class="card__content display-flex content_on_top_of_the_overlay"
-                >
-                  <h3 class="card__title font_heading fz-22 lh-115">
-                    <span class="underlined"
-                      >Книга, где описан один скучный день из жизни рекламного
-                      агента</span
-                    >
-                  </h3>
-
-                  <p class="card__text fz-20 lh-120">
-                    Объёмом почти в тысячу страниц. Иногда без знаков препинания
-                    и с переходами на древнеанглийский. В ней одновременно
-                    рассказывается о 16 июня 1904 года и об истории литературы,
-                    начиная с античных времён. И это всё накладывается на
-                    эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
-                    Джеймса Джойса?
-                  </p>
-                </div>
+                <!-- Заголовок -->
+                <h3 class="card__title font_heading">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <!-- Описание -->
+                <p class="card__text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
               </article>
             </a>
           </li>
           <li class="lots__card-list-item">
             <a href="#0" class="card-link">
-              <article class="card overlayed cover_no-repeat card_type_picture">
+              <!-- Карточка про картину -->
+              <article class="card card_type_picture">
+                <!-- Оверлей -->
                 <div class="overlay"></div>
-                <div
-                  class="card__content display-flex content_on_top_of_the_overlay"
-                >
-                  <h3 class="card__title font_heading fz-22 lh-115">
-                    <span class="underlined"
-                      >Картина, которую повторит даже 5-летний сын маминой
-                      подруги</span
-                    >
-                  </h3>
-                  <p class="card__text fz-20 lh-120">
-                    Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                    что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                    котиков… Сколько бы вы на такое поставили, если бы не знали,
-                    что это — одна из революционных работ Кандинского?
-                  </p>
-                </div>
+                <!-- Заголовок -->
+                <h3 class="card__title font_heading">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <!-- Описание -->
+                <p class="card__text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков… Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
               </article>
             </a>
           </li>
         </ul>
-        <a href="#0" class="link-underlined fz-20 lots__look-more-link"
+        <!-- Ссылка "Посмотреть больше" -->
+        <a href="#0" class="link-underlined lots__look-more-link"
           >посмотреть больше</a
         >
       </section>
-      <section class="about display-grid">
-        <div class="about__column display-flex">
-          <div class="about__logo display-flex">
-            <img
-              src="./images/logo-white.svg"
-              alt="Логотип проекта"
-              class="about__logo-image"
-            />
+      <!-- Секция: "Об аукционе" -->
+      <section class="about">
+        <div class="about__column">
+          <!-- Круглый логотип -->
+          <div class="circle-logo">
+            <!-- Изображение настроено фоном класса -->
           </div>
         </div>
-        <div class="about__column display-flex">
+        <div class="about__column">
+          <!-- Заголовок -->
           <h2 class="about__title section_heading color_primary font_heading">
             Об аукционе
           </h2>
-          <p class="about__text fz-20 lh-115">
+          <!-- Описание -->
+          <p class="about__text">
             Здесь вы не встретите очередное пафосное собрание невероятно
             дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
             один аукцион. Потому что кому нужен дневник девочки-подростка или
             картина, которую может нарисовать даже ребёнок? Кому нужны все эти
             странные вещи, созданные любителями?
           </p>
-          <p class="about__text fz-20 lh-115">
+          <p class="about__text">
             Слишком сложные или, наоборот, слишком простые. Опережающие своё
             время. В пух и прах растерзанные критиками. Непринятые и непонятые.
             Когда-то они казались просто неудачными. Но, несмотря на критику,
@@ -202,9 +196,11 @@
         </div>
       </section>
     </main>
-    <footer class="footer display-grid">
-      <address class="address font_primary fz-18">
-        <ul class="footer__address-list list_style_none">
+    <!-- Футер -->
+    <footer class="footer">
+      <!-- Адрес -->
+      <address class="address font_primary">
+        <ul class="footer__address-list">
           <li>
             <a class="link-underlined" href="tel:+99995555555">
               +9 999 555 5555
@@ -220,8 +216,9 @@
           </li>
         </ul>
       </address>
-      <nav class="footer__menu fz-18">
-        <ul class="footer__menu-list list_style_none">
+      <!-- Навигация -->
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
           <li class="footer__menu-link_active">
             <a href="#0">главная</a>
           </li>
@@ -233,7 +230,8 @@
           </li>
         </ul>
       </nav>
-      <ul class="footer__social-list display-flex list_style_none">
+      <!-- Социальные сети -->
+      <ul class="footer__social-list">
         <li class="footer__social-list-item">
           <a href="#0" class="footer__social-link">
             <img
